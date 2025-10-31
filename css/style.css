@@ -1,0 +1,259 @@
+/* 
+ css/styles.css 
+ Student Name: mais alhij
+ Student Id: 12429581
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    
+}
+li{
+    list-style: none;
+}
+
+:root {
+    --bg: #faf7f2;
+    --text: hwb(0 12% 88%);
+    --muted: #6b6b6b;
+    --brand: #216869;
+    --brand-2: #49a078;
+    --card: #ffffff;
+    --border: #e9e3db;
+}
+
+
+.rubik{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Rubik", sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+
+}
+
+.main-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--brand);
+}
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+}
+.nav-links a{
+    color: var(--brand);
+}
+.hero{
+    position: relative;
+    text-align: center;
+}
+.main-restaurant-img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 2;
+}
+.location{
+    background-color: var(--brand-2);
+    color: var(--brand);
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 30px;
+}
+.hero-content h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.hero-content p{
+    color: var(--border);
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.cta-button{
+    background-color: var(--brand);
+    color: var(--border);
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.about-content, .work-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.about-content span, .work-content span{
+    color: var(--muted);
+}
+.aboutUs, .chefNotes{
+    width: 46%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--card);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.aboutLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+
+}
+.aboutLinks a{
+    border: solid #000 1px;
+    border-radius: 30px;
+    padding: 5px;
+    font-size: 12px;
+    color: #000;
+}
+.aboutLinks a:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+#menu{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#menu small{
+    color: var(--muted);
+}
+
+.menu{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mezze, .mains, .drinks{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card);
+    width: 32%;
+    padding: 16px;
+    border-radius: 15px;
+    gap: 5px;
+    margin-top: 15px;
+}
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 5px;
+    align-items: center;
+    border-bottom: dashed var(--muted) 1px;
+}
+.menu-content p{
+    color: var(--muted);
+    
+}
+.menu-content span{
+    color: var(--brand);
+    font-weight: bold;
+    
+}
+.dash {
+    border: none;
+}
+.work-hours, .reserve{
+    width: 46%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--card);
+}
+.reserve p{
+    margin-top: 10px;
+}
+.reserve p span{
+    color: var(--text);
+    font-weight: bold;
+}
+.reserve p a{
+    color: var(--brand-2);
+}
+.hours{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--muted);
+    margin-top: 10px;
+}
+
+#map{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.map{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.find-us{
+    width: 46%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--card);
+    height: 200px;
+}
+.find-us p{
+    margin-top:10px;
+}
+.find-us span{
+    color: var(--muted);
+    margin-top: 5px;
+}
+.map-img{
+    width: 46%;
+    height: 200px;
+}
+.map-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.site-footer{
+    border-top: solid 1px #5e5e5e;
+    text-align: center;
+}
+.footer-content{
+    padding: 20px;
+    color: #5e5e5e;
+}
